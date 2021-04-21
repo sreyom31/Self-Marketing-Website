@@ -1,0 +1,660 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        .design{
+            animation: design 3s;
+        }
+        .HTML5{
+            animation: HTML5 3s;
+        }
+        .CSS3{
+            animation: CSS3 3s;
+        }
+        .Bootstrap{
+            animation: Bootstrap 3s;
+        }
+        @keyframes design {
+            0%{
+                width: 0%;
+            }
+            100%{
+                width: 85%;
+            }
+            
+        }
+        @keyframes HTML5 {
+            0%{
+                width: 0%;
+            }
+            100%{
+                width: 98%;
+            }
+            
+        }
+        @keyframes CSS3 {
+            0%{
+                width: 0%;
+            }
+            100%{
+                width: 97%;
+            }
+            
+        }
+        @keyframes Bootstrap {
+            0%{
+                width: 0%;
+            }
+            100%{
+                width: 82%;
+            }
+            
+        }
+    </style>
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <!-- <h1>Hello, world!</h1> -->
+    <nav class=" navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class=" fw-bolder navbar-brand ms-5" href="#">Srey.</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse d-flex justify-content-center" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#pricing">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#resume">Resume</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://sreyom31.github.io/iCoderBootstrap/">Our Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact Us</a>
+                    </li>
+                    <!-- <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Dropdown link
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li> -->
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="3.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1 class="fw-bolder text-warning fs-1">I am Sreyom Sresaan.</h1>
+                    <p class="fs-4">A Full-Stack Developer</p>
+                    <button class="btn btn-danger">MongoDb</button>
+                    <button class="btn btn-primary">Express</button>
+                    <button class="btn btn-success">React</button>
+                    <button class="btn btn-dark">Node</button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="2.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1 class="fw-bolder text-warning fs-1">I am Sreyom Sresaan.</h1>
+                    <p class="fs-4">A Full-Stack Developer</p>
+                    <button class="btn btn-danger">MongoDb</button>
+                    <button class="btn btn-primary">Express</button>
+                    <button class="btn btn-success">React</button>
+                    <button class="btn btn-dark">Node</button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="1.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1 class="fw-bolder text-warning fs-1">I am Sreyom Sresaan.</h1>
+                    <p class="fs-4">A Full-Stack Developer</p>
+                    <button class="btn btn-danger">MongoDb</button>
+                    <button class="btn btn-primary">Express</button>
+                    <button class="btn btn-success">React</button>
+                    <button class="btn btn-dark">Node</button>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <hr class="featurette-divider">
+    <br>
+
+    <div class="container" id="about">
+        <div class="row mb-5 align-items-center">
+            <div class="col-lg-7 pr-lg-5 mb-5 mb-lg-0 aos-init aos-animate" data-aos="fade-up" data-aos-delay="0">
+                <div class="img-wrap">
+                    <img src="about1.jpg" alt="Image placeholder" class="img-fluid">
+                </div>
+            </div>
+            <div class="col-lg-5 pl-lg-5 aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+                <div class="section-heading">
+                    <h1 class="fw-bolder">My Bio</h1>
+                </div>
+                <p>I’m Sreyom Sresaan, but you can just call me Srey.</p>
+                <p>Originally hailing from the India. I’ve been honing my skills in design, production and management
+                    roles building fully responsive and working website with hosting.</p>
+                <p>I strive to create elegant solutions that surprise and delight users, while keeping complex technical
+                    dependencies in mind for implementation, scalability and developer sanity.</p>
+                <p>I’ve worked with small, agile teams on skunkworks projects and looking forward to learn new stuffs.
+                </p>
+                <p>Depending on the team, resources and deliverables I’ve worn many hats over these months.</p>
+                <p>Have an interesting project?&nbsp;<a href="#contact" class="link text-danger">Let's talk</a>.</p>
+                <div class="my-5">
+                    <div class="skill">
+                        <h5>Design</h5>
+                        <div class="progress">
+                            <div class="progress-bar bg-warning design" role="progressbar" style="width: 85%"
+                                aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="skill">
+                        <h5>HTML5</h5>
+                        <div class="progress">
+                            <div class="progress-bar bg-warning HTML5" role="progressbar" style="width: 98%"
+                                aria-valuenow="98" aria-valuemin="0" aria-valuemax="100">
+                                <span>98%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="skill">
+                        <h5>CSS3</h5>
+                        <div class="progress">
+                            <div class="progress-bar bg-warning CSS3" role="progressbar" style="width: 97%"
+                                aria-valuenow="97" aria-valuemin="0" aria-valuemax="100">
+                                <span>97%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="skill">
+                        <h5>Bootstrap</h5>
+                        <div class="progress">
+                            <div class="progress-bar bg-warning Bootstrap" role="progressbar" style="width: 82%"
+                                aria-valuenow="92" aria-valuemin="0" aria-valuemax="100">
+                                <span>82%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p>
+                    <a href="#contact-section" class="btn btn-primary smoothscroll">Hire Me</a>
+                    <a href="#" class="btn btn-warning">Download CV</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <hr class="featurette-divider">
+    <br>
+
+    <h1 class="fw-bolder text-center">What I do?</h1>
+    <div class="album py-5 bg-light" id="services">
+        <div class="container">
+
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <!-- <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> -->
+                        <img src="services1.jpg" alt="" srcset="">
+
+                        <div class="card-body">
+                            <h3 class="text-center">Web Development</h3>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This content is a little bit longer.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-lg btn-outline-success">View</button>
+                                </div>
+                                <small class="text-muted">9 mins</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <!-- <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> -->
+                        <img src="services2.jpg" alt="" srcset="">
+
+                        <div class="card-body">
+                            <h3 class="text-center">Designing</h3>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This content is a little bit longer.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-lg btn-outline-success ">View</button>
+                                </div>
+                                <small class="text-muted">9 mins</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <!-- <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> -->
+                        <img src="services3.jpg" alt="" srcset="">
+
+                        <div class="card-body">
+                            <h3 class="text-center">E-Commerce</h3>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This content is a little bit longer.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-lg btn-outline-success">View</button>
+                                </div>
+                                <small class="text-muted">9 mins</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr class="featurette-divider">
+    <br>
+
+    <div class="container py-3" id="pricing">
+        <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+            <h1 class="display-4 fw-bolder">Pricing</h1>
+            <p class="fs-5 text-muted">Life is hard enough already. Let us make it a little easier.</p>
+        </div>
+
+        <main>
+            <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+                <div class="col">
+                    <div class="card mb-4 rounded-3 shadow-sm">
+                        <div class="card-header py-3">
+                            <h4 class="my-0 fw-normal">Free</h4>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title pricing-card-title">$0<small class="text-muted fw-light">/mo</small>
+                            </h1>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li>10 users included</li>
+                                <li>2 GB of storage</li>
+                                <li>Email support</li>
+                                <li>Help center access</li>
+                            </ul>
+                            <button type="button" class="w-100 btn btn-lg btn-outline-primary">Sign up for free</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mb-4 rounded-3 shadow-sm">
+                        <div class="card-header py-3">
+                            <h4 class="my-0 fw-normal">Pro</h4>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title pricing-card-title">$15<small class="text-muted fw-light">/mo</small>
+                            </h1>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li>20 users included</li>
+                                <li>10 GB of storage</li>
+                                <li>Priority email support</li>
+                                <li>Help center access</li>
+                            </ul>
+                            <button type="button" class="w-100 btn btn-lg btn-primary">Get started</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mb-4 rounded-3 shadow-sm border-primary">
+                        <div class="card-header py-3 text-white bg-primary border-primary">
+                            <h4 class="my-0 fw-normal">Enterprise</h4>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title pricing-card-title">$29<small class="text-muted fw-light">/mo</small>
+                            </h1>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li>30 users included</li>
+                                <li>15 GB of storage</li>
+                                <li>Phone and email support</li>
+                                <li>Help center access</li>
+                            </ul>
+                            <button type="button" class="w-100 btn btn-lg btn-primary">Contact Us</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="display-6 text-center mb-4 text-success fw-bold">Compare plans</h2>
+
+            <div class="table-responsive">
+                <table class="table text-center">
+                    <thead>
+                        <tr>
+                            <th style="width: 34%;"></th>
+                            <th style="width: 22%;">Free</th>
+                            <th style="width: 22%;">Pro</th>
+                            <th style="width: 22%;">Enterprise</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row" class="text-start">Public</th>
+                            <td>✓</td>
+                            <td>✓</td>
+                            <td>✓</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="text-start">Private</th>
+                            <td></td>
+                            <td>✓</td>
+                            <td>✓</td>
+                        </tr>
+                    </tbody>
+
+                    <tbody>
+                        <tr>
+                            <th scope="row" class="text-start">Permissions</th>
+                            <td>✓</td>
+                            <td>✓</td>
+                            <td>✓</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="text-start">Sharing</th>
+                            <td></td>
+                            <td>✓</td>
+                            <td>✓</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="text-start">Unlimited members</th>
+                            <td></td>
+                            <td>✓</td>
+                            <td>✓</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="text-start">Extra security</th>
+                            <td></td>
+                            <td></td>
+                            <td>✓</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+
+
+
+
+
+    </div>
+
+    <hr class="featurette-divider">
+    <br>
+
+    <div class="container" id="resume">
+        <div class="row">
+            <div class="section-heading text-center col-md-12 mb-5 aos-init aos-animate" data-aos="fade-up"
+                data-aos-delay="0">
+                <h1 class="fw-bolder">Resume</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+                <img src="resume1.jpg" alt="Image" class="img-fluid">
+            </div>
+            <div class="col-lg-7 ml-auto aos-init aos-animate my-5" data-aos="fade-up" data-aos-delay="200">
+                <h3 class="mb-5 text-center">Work Experience</h3>
+                <div class="resume-item d-flex work ms-5 ps-5">
+                    <div>
+                        <h4>Full Stack Developer</h4>
+                        <div class="d-flex">
+                            <div class="d-flex resume-meta">
+                                <span class="mr-3">
+                                    <span class="icon">
+                                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-building"
+                                            fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd"
+                                                d="M14.763.075A.5.5 0 0 1 15 .5v15a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5V14h-1v1.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V10a.5.5 0 0 1 .342-.474L6 7.64V4.5a.5.5 0 0 1 .276-.447l8-4a.5.5 0 0 1 .487.022zM6 8.694L1 10.36V15h5V8.694zM7 15h2v-1.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5V15h2V1.309l-7 3.5V15z">
+                                            </path>
+                                            <path
+                                                d="M2 11h1v1H2v-1zm2 0h1v1H4v-1zm-2 2h1v1H2v-1zm2 0h1v1H4v-1zm4-4h1v1H8V9zm2 0h1v1h-1V9zm-2 2h1v1H8v-1zm2 0h1v1h-1v-1zm2-2h1v1h-1V9zm0 2h1v1h-1v-1zM8 7h1v1H8V7zm2 0h1v1h-1V7zm2 0h1v1h-1V7zM8 5h1v1H8V5zm2 0h1v1h-1V5zm2 0h1v1h-1V5zm0-2h1v1h-1V3z">
+                                            </path>
+                                        </svg>
+                                    </span>
+                                    <span>Webarch, SRMIST</span>
+                                </span>
+                                <span class="icon ms-3">
+                                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-geo-alt"
+                                        fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd"
+                                            d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 0 0-6 3 3 0 0 0 0 6z">
+                                        </path>
+                                    </svg>
+                                </span>
+                                <span>Chennai</span>
+                                <span class="icon ms-3">
+                                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-calendar-event"
+                                        fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd"
+                                            d="M1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1zm1-3a2 2 0 0 0-2 2v11a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2H2z">
+                                        </path>
+                                        <path fill-rule="evenodd"
+                                            d="M3.5 0a.5.5 0 0 1 .5.5V1a.5.5 0 0 1-1 0V.5a.5.5 0 0 1 .5-.5zm9 0a.5.5 0 0 1 .5.5V1a.5.5 0 0 1-1 0V.5a.5.5 0 0 1 .5-.5z">
+                                        </path>
+                                        <rect width="2" height="2" x="11" y="6" rx=".5"></rect>
+                                    </svg>
+                                </span>
+                                <span>March 2021 - Present </span>
+                                <div class="clearfix ms-3 border border-success border-3 rounded-pill px-2">
+                                    <span class="period d-block float-right"><span>Fulltime</span></span>
+                                </div>
+                            </div>
+                            <div></div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+
+                <h3 class="mt-5 mb-3 text-center">Education</h3>
+                <div class="resume-item d-flex work ms-5 ps-5">
+                    <div>
+                        <h4>B-Tech in Computer Science Engineering</h4>
+                        <div class="d-flex">
+                            <div class="d-flex resume-meta">
+                                <span class="mr-3">
+                                    <span class="icon">
+                                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-calendar-event"
+                                            fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd"
+                                                d="M1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1zm1-3a2 2 0 0 0-2 2v11a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2H2z">
+                                            </path>
+                                            <path fill-rule="evenodd"
+                                                d="M3.5 0a.5.5 0 0 1 .5.5V1a.5.5 0 0 1-1 0V.5a.5.5 0 0 1 .5-.5zm9 0a.5.5 0 0 1 .5.5V1a.5.5 0 0 1-1 0V.5a.5.5 0 0 1 .5-.5z">
+                                            </path>
+                                            <rect width="2" height="2" x="11" y="6" rx=".5"></rect>
+                                        </svg>
+                                    </span>
+                                    <span>SRM University</span>
+                                </span>
+                                <span class="icon ms-4">
+                                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-geo-alt"
+                                        fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd"
+                                            d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 0 0-6 3 3 0 0 0 0 6z">
+                                        </path>
+                                    </svg>
+                                </span>
+                                <span>Chennai</span>
+                                <span class="icon ms-3">
+                                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-calendar-event"
+                                        fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd"
+                                            d="M1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1zm1-3a2 2 0 0 0-2 2v11a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2H2z">
+                                        </path>
+                                        <path fill-rule="evenodd"
+                                            d="M3.5 0a.5.5 0 0 1 .5.5V1a.5.5 0 0 1-1 0V.5a.5.5 0 0 1 .5-.5zm9 0a.5.5 0 0 1 .5.5V1a.5.5 0 0 1-1 0V.5a.5.5 0 0 1 .5-.5z">
+                                        </path>
+                                        <rect width="2" height="2" x="11" y="6" rx=".5"></rect>
+                                    </svg>
+                                </span>
+                                <span>August 2020-2024</span>
+                            </div>
+                            <div></div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container m-auto" id="contact">
+        <h1 class="fw-bolder text-center">Contact Us</h1>
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+        </div>
+        <div class="form-group">
+            <!-- <label for="exampleFormControlSelect1">Select your Query</label> -->
+            <select class="form-select" aria-label="Default select example">
+                <option selected>Select Your Query</option>
+                <option value="1">Web Dv</option>
+                <option value="2">Design</option>
+                <option value="3">E-Commerce</option>
+            </select>
+        </div>
+        <div class="form-group row mt-3">
+            <div class="col-sm-2">Are you a Member?</div>
+
+            <div class="col-sm-10">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck1">
+                    <label class="form-check-label" for="gridCheck1">
+                        Yes
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-group mt-3">
+                <label for="exampleFormControlTextarea1">Tell us about yourself</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+
+            <div class="form-group mt-3">
+                <label for="exampleFormControlTextarea2">Elaborate Your Concern</label>
+                <textarea class="form-control" id="exampleFormControlTextarea2" rows="3"></textarea>
+            </div>
+
+        </div>
+
+        <button class="btn btn-outline-success mt-3">Submit</button>
+    </div>
+    
+
+    <div class="container py-3" id="footer">
+        <footer class="pt-4 my-md-5 pt-md-5 border-top">
+            <div class="row">
+                <div class="col-12 col-md">
+                    <i class="fa fa-ravelry"></i>
+                    <small class="d-block mb-3 text-muted">© 2017–2021</small>
+                </div>
+                <div class="col-6 col-md">
+                    <h5>Features</h5>
+                    <ul class="list-unstyled text-small">
+                        <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Cool stuff</a></li>
+                        <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Random feature</a></li>
+                        <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Team feature</a></li>
+                        <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Stuff for
+                                developers</a></li>
+                        <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Another one</a></li>
+                        <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Last time</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md">
+                    <h5>Resources</h5>
+                    <ul class="list-unstyled text-small">
+                        <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Resource</a></li>
+                        <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Resource name</a></li>
+                        <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Another resource</a>
+                        </li>
+                        <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Final resource</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md">
+                    <h5>About</h5>
+                    <ul class="list-unstyled text-small">
+                        <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Team</a></li>
+                        <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Locations</a></li>
+                        <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Privacy</a></li>
+                        <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Terms</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+    -->
+    <script src="https://kit.fontawesome.com/3c2af0c8a3.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
